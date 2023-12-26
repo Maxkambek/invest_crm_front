@@ -63,7 +63,7 @@ const CBlock = () => {
                                   : ""
                               }`}
                             >
-                              {item.floor_rooms[0]?.room_number}
+                              {item.floor_rooms[1]?.room_number}
                             </div>
                             <div
                               onClick={() =>
@@ -84,7 +84,7 @@ const CBlock = () => {
                                   : ""
                               }`}
                             >
-                              {item.floor_rooms[1]?.room_number}
+                              {item.floor_rooms[0]?.room_number}
                             </div>
                           </div>
                           <div className="a_box_1">
@@ -107,7 +107,7 @@ const CBlock = () => {
                                   : ""
                               }`}
                             >
-                              {item.floor_rooms[3]?.room_number}
+                              {item.floor_rooms[2]?.room_number}
                             </div>
                             <div className="a_box_1_main_3">LIFT</div>
                           </div>
@@ -122,7 +122,7 @@ const CBlock = () => {
                                   item.floor_rooms[4]?.id
                                 )
                               }
-                              className={`a_box_1_main_10 ${
+                              className={`a_box_1_main_10 d-flex justify-content-end ${
                                 item.floor_rooms[4]?.status_room ==
                                 "бронирование"
                                   ? "active"
@@ -132,7 +132,7 @@ const CBlock = () => {
                                   : ""
                               }`}
                             >
-                              {item.floor_rooms[4]?.room_number}
+                              {item.floor_rooms[3]?.room_number}
                             </div>
                             <div
                               onClick={() =>
@@ -153,7 +153,7 @@ const CBlock = () => {
                                   : ""
                               }`}
                             >
-                              {item.floor_rooms[5]?.room_number}
+                              {item.floor_rooms[4]?.room_number}
                             </div>
                           </div>
                           <div className="a_box_1">
@@ -176,7 +176,7 @@ const CBlock = () => {
                                   : ""
                               }`}
                             >
-                              {item.floor_rooms[4]?.room_number}
+                              {/* {item.floor_rooms[4]?.room_number} */}
                             </div>
                           </div>
                           <div className="a_box_1">
@@ -199,7 +199,7 @@ const CBlock = () => {
                                   : ""
                               }`}
                             >
-                              {item.floor_rooms[6]?.room_number}
+                              {/* {item.floor_rooms[6]?.room_number} */}
                             </div>
                           </div>
                           <div className="a_box_1">
@@ -212,7 +212,7 @@ const CBlock = () => {
                                   item.floor_rooms[6]?.room_number
                                 )
                               }
-                              className={`a_box_1_main_8 ${
+                              className={`a_box_1_main_8 d-flex justify-content-start ${
                                 item.floor_rooms[6]?.status_room ==
                                 "бронирование"
                                   ? "active"
@@ -243,7 +243,7 @@ const CBlock = () => {
                                   : ""
                               }`}
                             >
-                              {item.floor_rooms[7]?.room_number}
+                              {item.floor_rooms[5]?.room_number}
                             </div>
                           </div>
                           <div className="a_box_1">
@@ -266,7 +266,7 @@ const CBlock = () => {
                                   : ""
                               }`}
                             >
-                              {item.floor_rooms[8]?.room_number}
+                              {item.floor_rooms[7]?.room_number}
                             </div>
                             <div className="a_box_1_main_3">LIFT</div>
                           </div>
@@ -290,7 +290,7 @@ const CBlock = () => {
                                   : ""
                               }`}
                             >
-                              {item.floor_rooms[9]?.room_number}
+                              {item.floor_rooms[8]?.room_number}
                             </div>{" "}
                             <div
                               onClick={() =>
@@ -311,7 +311,7 @@ const CBlock = () => {
                                   : ""
                               }`}
                             >
-                              {item.floor_rooms[10]?.room_number}
+                              {item.floor_rooms[9]?.room_number}
                             </div>
                           </div>
                         </div>

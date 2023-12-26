@@ -1,0 +1,232 @@
+.pdf-page {
+  position: relative;
+  margin: 0 auto;
+  /* padding: 0.4in 0.3in; */
+  color: #333;
+  background-color: #1f2222;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+
+  /*
+          Use the DejaVu Sans font for display and embedding in the PDF file.
+          The standard PDF fonts have no support for Unicode characters.
+      */
+  font-family: "DejaVu Sans", "Arial", sans-serif;
+}
+
+/*
+      The example loads the DejaVu Sans from the Kendo UI CDN.
+      Other fonts have to be hosted from your application.
+      The official site of the Deja Vu Fonts project is
+      https://dejavu-fonts.github.io/.
+  */
+@font-face {
+  font-family: "DejaVu Sans";
+  src: url("https://kendo.cdn.telerik.com/2017.2.621/styles/fonts/DejaVu/DejaVuSans.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "DejaVu Sans";
+  font-weight: bold;
+  src: url("https://kendo.cdn.telerik.com/2017.2.621/styles/fonts/DejaVu/DejaVuSans-Bold.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "DejaVu Sans";
+  font-style: italic;
+  src: url("https://kendo.cdn.telerik.com/2017.2.621/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf")
+    format("truetype");
+}
+
+@font-face {
+  font-family: "DejaVu Sans";
+  font-weight: bold;
+  font-style: italic;
+  src: url("https://kendo.cdn.telerik.com/2017.2.621/styles/fonts/DejaVu/DejaVuSans-Oblique.ttf")
+    format("truetype");
+}
+
+/* Dimensions other than px and em should be divided by 1.33 for the proper PDF output */
+.size-a4 {
+  width: 6.2in;
+  height: 8.7in;
+}
+
+.size-letter {
+  width: 6.3in;
+  height: 8.2in;
+}
+
+.size-executive {
+  width: 5.4in;
+  height: 7.8in;
+  font-size: 12px;
+}
+
+.size-executive .pdf-header {
+  margin-bottom: 0.1in;
+}
+
+.box {
+  padding: 1em;
+  background-color: #262826;
+  border: 1px solid #262826;
+}
+
+.in_top {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.in_logo {
+  padding-top: 12px;
+  margin-left: 32px;
+  width: 30%;
+}
+
+.in_logo_2 {
+  width: 20%;
+}
+
+.in_top_box {
+  height: 182px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.in_top_box_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+.in_top_item {
+  text-align: center;
+}
+
+.in_top_item_h {
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.in_top_item_p {
+  color: #fff;
+  font-weight: 700;
+}
+
+.in_box_img {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 12px;
+  width: 50%;
+  margin-top: 25px;
+}
+
+.in_box_images {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.in_box_in_img {
+  width: 100%;
+  
+}
+
+.in_box_text {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.in_text_main {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #fff;
+}
+
+.in_text_h {
+}
+
+.in_text {
+  width: 49%;
+  padding: 12px;
+}
+
+.in_text_h {
+  text-align: end;
+  margin-top: 12px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px; /* 100% */
+}
+
+.in_text_p {
+  text-align: end;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px; /* 100% */
+}
+
+.in_text_p_active {
+  font-size: 22px;
+  line-height: 30px;
+  color: #1aa37a !important;
+}
+
+.in_text_h_2 {
+  text-align: end;
+  margin-top: 12px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+}
+
+.in_text_p_2 {
+  text-align: end;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px; /* 100% */
+}
+
+.in_text_p_3 {
+  font-size: 22px;
+  line-height: 28px;
+  color: #1aa37a;
+}
+
+.in_box_text_2 {
+  padding: 12px;
+}
+
+.in_text_2_h {
+  margin-top: 12px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px; /* 100% */
+}
+
+.in_text_2_p {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px; /* 100% */
+}
+
+.in_text_2_p_2 {
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px; /* 100% */
+}
